@@ -1,0 +1,27 @@
+[
+    {
+      "id":1,
+      "name": "tala barham",
+      "comment": "Great product!",
+      "rating": 5
+    },
+    {
+      "id":2,
+      "name": "noor al deen",
+      "comment": "Decent quality.",
+      "rating": 4
+    },
+    {
+      "id":3,
+      "name": "rajab masri",
+      "comment": "bad",
+      "rating": 1
+    },
+    {
+      "id":4,
+      "name": "mohammad shawahni",
+      "comment": "bad",
+      "rating": 0
+    }
+  ]
+  
