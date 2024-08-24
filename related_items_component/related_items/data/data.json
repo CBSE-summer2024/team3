@@ -1,0 +1,7 @@
+[
+    { "image": "https://via.placeholder.com/150", "name": "Product 1", "price": "$10" },
+    { "image": "https://via.placeholder.com/150", "name": "Product 2", "price": "$15" },
+    { "image": "https://via.placeholder.com/150", "name": "Product 3", "price": "$20" },
+    { "image": "https://via.placeholder.com/150", "name": "Product 4", "price": "$25" }
+  ]
+  
