@@ -4,17 +4,30 @@
     <div class="slider">
       <button @click="slideLeft" class="slider-btn left-btn">‹</button>
       <div class="reviews-wrapper" ref="reviewsWrapper">
-        <div v-for="review in reviews" :key="review.id" class="review">
+        <div v-for="review in reviews" :key="review.id" :class="{'review': true, 'expanded': expandedReviews[review.id]}">
           <h3>{{ review.name }}</h3>
+          <p>
+            <span v-if="isTextLong(review.comment)">
+              <span v-if="!expandedReviews[review.id]">
+                {{ truncatedText(review.comment) }}
+                <span class="view-more" @click="toggleText(review.id)">View More</span>
+              </span>
+              <span v-else>
+                {{ review.comment }}
+                <span class="view-more" @click="toggleText(review.id)">View Less</span>
+              </span>
+            </span>
+            <span v-else>
+              {{ review.comment }}
+            </span>
+          </p>
           <p class="stars">{{ getStars(review.rating) }}</p>
-          <p>{{ review.comment }}</p>
         </div>
       </div>
       <button @click="slideRight" class="slider-btn right-btn">›</button>
     </div>
   </div>
 </template>
-
 
 <script>
 import reviewsData from "../assets/reviews.json";
@@ -23,6 +36,7 @@ export default {
   data() {
     return {
       reviews: [],
+      expandedReviews: {},
     };
   },
   created() {
@@ -32,11 +46,17 @@ export default {
     getStars(rating) {
       return "★".repeat(rating) + "☆".repeat(5 - rating);
     },
-    slideLeft() {
-      this.$refs.reviewsWrapper.scrollLeft -= 300;
+    isTextLong(text) {
+      return text.length > 30; 
     },
-    slideRight() {
-      this.$refs.reviewsWrapper.scrollLeft += 300;
+    truncatedText(text) {
+      return text.slice(0, 30) + "..."; 
+    },
+    toggleText(id) {
+      this.expandedReviews = {
+        ...this.expandedReviews,
+        [id]: !this.expandedReviews[id],
+      };
     },
   },
 };
@@ -73,21 +93,27 @@ export default {
   display: none; 
 }
 
-
 .review {
   flex: 0 0 auto;
   width: 190px;
   padding: 20px;
   border-radius: 8px;
-  background-color: whitesmoke;
+  background-color: white;
   text-align: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, max-height 0.2s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #ddd; 
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  overflow: hidden;
+  max-height: 150px;
+  position: relative; 
 }
 
+
+.review.expanded {
+  max-height: 300px; 
+}
 
 .review:hover {
   transform: translateY(-5px);
@@ -109,10 +135,23 @@ export default {
   font-size: 16px;
   margin: 10px 0;
   word-wrap: break-word;
+  overflow: hidden;
+}
+
+.view-more {
+  color: blue;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 5px;
+  position: absolute; 
+  bottom: 10px; 
+  left: 50%;
+  transform: translateX(-50%); 
 }
 
 .slider-btn {
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.781);
   border: none;
   color: white;
   padding: 10px;
