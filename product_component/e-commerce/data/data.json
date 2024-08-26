@@ -1,0 +1,23 @@
+{
+    "product": {
+        "name": "Bell Nude Foundation",
+        "price": "50₪",
+        "rating": 4.6,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "thumbnails": [
+            "01",
+            "02",
+            "03",
+            "04"
+        ],
+        "images": {
+            "mainImage": "https://via.placeholder.com/473x263",
+            "thumbnailImages": [
+                "https://via.placeholder.com/88",
+                "https://via.placeholder.com/88",
+                "https://via.placeholder.com/88",
+                "https://via.placeholder.com/88"
+            ]
+        }
+    }
+}
