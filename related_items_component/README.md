@@ -9,15 +9,19 @@ so :<br>
 
  ### Doing Test using [Lighthouse]
 ![alt text](readme_images/image.png)
+<br><br>
 After doing test using **[lighthouse]** the results shown as at picture, the results are good but there somethings need to improves.
 
  ### Doing Test using [Playwright]
 Doing this test to check the compatibility of component on browsers, I did this test on **[3]** browsers :
 * **[1. Chrome] :** 
+<br><br>
 ![alt text](readme_images/chrome_test.png)
 * **[2. Firefox] :** 
+<br><br>
 ![alt text](readme_images/firefox_test.png)
 * **[3. Safari(Webkit)] :** 
+<br><br>
 ![alt text](readme_images/safari_test.png)
 
 ## Updates & Improvements
@@ -50,10 +54,13 @@ so here you can pass the path to component tag with **[data-source]** attribute.
  ### Doing Test using [Playwright] #2
 
 * **[1. Chrome] :** 
+<br><br>
 ![alt text](readme_images/chrome_test_2.png)
 * **[2. Firefox] :** 
+<br><br>
 ![alt text](readme_images/firefox_test_2.png)
 * **[3. Safari(Webkit)] :** 
+<br><br>
 ![alt text](readme_images/safari_test_2.png)
 
 ## [src] folder structure
