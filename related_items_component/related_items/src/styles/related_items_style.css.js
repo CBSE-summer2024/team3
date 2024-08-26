@@ -1,4 +1,3 @@
-
 import { css } from "lit";
 
 export const relatedItemsStyles = css`
@@ -8,12 +7,20 @@ export const relatedItemsStyles = css`
     background-color: #f9f9f9;
     font-family: Arial, sans-serif;
   }
+  .related-items {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
   .container {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    justify-content: center;
+    justify-content: flex-start;
   }
+
   .card {
     background-color: #ffffff;
     border: 1px solid #ddd;
@@ -28,6 +35,13 @@ export const relatedItemsStyles = css`
     height: auto;
     border-radius: 8px;
   }
+  .card .name,
+  .card .price {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
   .card .name {
     font-size: 16px;
     font-weight: bold;
@@ -36,10 +50,14 @@ export const relatedItemsStyles = css`
   .card .price {
     font-size: 14px;
     color: #333;
-    margin: 4px 0 12px;
+    margin: 4px auto 12px;
+  }
+
+  .card .price {
+    max-width: 100px;
   }
   .card button {
-    background-color: #007bff;
+    background-color: #e91e63;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -48,10 +66,10 @@ export const relatedItemsStyles = css`
     font-size: 14px;
   }
   .card button:hover {
-    background-color: #0056b3;
+    background-color: #c2185b;
   }
 
   .card button:focus {
-      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 0 3px #009688;
   }
 `;

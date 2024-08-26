@@ -4,10 +4,9 @@ import { renderProductList } from "./components/product-list";
 import { relatedItemsStyles } from "./styles/related_items_style.css";
 
 export class RelatedItems extends LitElement {
-
   static properties = {
-    dataSource: { type: String, attribute: 'data-source' },
-    products: { type: Array }
+    dataSource: { type: String, attribute: "data-source" },
+    products: { type: Array },
   };
 
   static styles = [relatedItemsStyles];
@@ -15,7 +14,7 @@ export class RelatedItems extends LitElement {
   constructor() {
     super();
     this.products = [];
-    this.dataSource = '';
+    this.dataSource = "";
   }
 
   async firstUpdated() {
@@ -23,7 +22,7 @@ export class RelatedItems extends LitElement {
       try {
         this.products = await fetchData(this.dataSource);
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error("Error fetching products:", error);
       }
     }
   }
@@ -36,7 +35,6 @@ export class RelatedItems extends LitElement {
       </section>
     `;
   }
-
 
   handleClick(productName) {
     alert(`You clicked on ${productName}`);
