@@ -22,6 +22,18 @@
       "name": "mohammad shawahni",
       "comment": "badddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
       "rating": 0
+    },
+    {
+      "id":5,
+      "name": "samer",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+      "rating": 3
+    },
+    {
+      "id":6,
+      "name": "muna",
+      "comment": "not bad ",
+      "rating": 2
     }
   ]
   
