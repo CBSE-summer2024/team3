@@ -1,36 +1,30 @@
 [
     {
-      "id":1,
       "name": "tala barham",
-      "comment": "Great product!",
+      "comment": "Great product",
       "rating": 5
     },
     {
-      "id":2,
       "name": "noor al deen",
-      "comment": "Decent quality.",
+      "comment": "Decent quality",
       "rating": 4
     },
     {
-      "id":3,
       "name": "rajab masri",
       "comment": "bad",
       "rating": 1
     },
     {
-      "id":4,
       "name": "mohammad shawahni",
       "comment": "badddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
       "rating": 0
     },
     {
-      "id":5,
       "name": "samer",
       "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
       "rating": 3
     },
     {
-      "id":6,
       "name": "muna",
       "comment": "not bad ",
       "rating": 2

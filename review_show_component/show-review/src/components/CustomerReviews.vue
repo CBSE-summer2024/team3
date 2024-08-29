@@ -1,16 +1,16 @@
 <template>
   <div class="main-container">
-    <ReviewsContainer :reviews="reviews" />
+    <SliderContainer :reviews="reviews" />
   </div>
 </template>
 
 <script>
-import ReviewsContainer from './SliderComponent.vue';
-import reviewsData from "../assets/reviews.json";
+import SliderContainer from './SliderContainer.vue';
+import reviewsData from "../data/reviews.json";
 
 export default {
   components: {
-    ReviewsContainer,
+    SliderContainer,
   },
   data() {
     return {
@@ -20,8 +20,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.main-container {
-  width: 100%;
-}
-</style>
+<style src="../style/styles.css" scoped></style>
