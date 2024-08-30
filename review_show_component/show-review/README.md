@@ -8,13 +8,13 @@ Show reviews for a specific product in a visually appealing manner.
 Target Audience:
 Developers and site administrators who manage e-commerce platforms and need an efficient, user-friendly review component to enhance customer engagement.
 ## Features
--Review Display: Showcases customer reviews with ratings, user names, and review content.
--Review Slider: Provides a horizontal scrolling feature to browse through multiple reviews.
--Expandable Text: Allows users to expand or collapse long reviews for better readability.
+- Review Display: Showcases customer reviews with ratings, user names, and review content.
+- Review Slider: Provides a horizontal scrolling feature to browse through multiple reviews.
+- Expandable Text: Allows users to expand or collapse long reviews for better readability.
 ## Project Organization
--components/: Contains individual Vue components like CustomerReviews, ReviewCard, SliderContainer.
--data/: Contains dummy data files that simulate API responses for development and testing purposes.
--style/:Contain css style.
+- components/: Contains individual Vue components like CustomerReviews, ReviewCard, SliderContainer.
+- data/: Contains dummy data files that simulate API responses for development and testing purposes.
+- style/:Contain css style.
 ## Getting Started
 ### Prerequisites
 - **Node.js** 
