@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Quantity = () => {
+const QuantitySelector = () => {
 
     const [quantity, setQuantity] = useState(1);
 
@@ -19,4 +19,4 @@ const Quantity = () => {
     );
 };
 
-export default Quantity;
+export default QuantitySelector;

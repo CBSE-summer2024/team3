@@ -1,4 +1,4 @@
-import { ProductInfo } from './components/ProductInfo'
+import  ProductInfo from '../src/components/ProductInfo'
 
 function App() {
 
