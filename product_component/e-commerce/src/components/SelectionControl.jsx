@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const SelectionControl = ({ selections }) => {
+const SelectionControl = ({ selectionName, selectionsData}) => {
     const [selectedIndex, setSelectedIndex] = useState(null);
 
     const handleSelectionClick = (index) => {
@@ -10,9 +10,9 @@ const SelectionControl = ({ selections }) => {
 
     return (
         <div>
-            <h3>Size</h3>
+            <h3>{selectionName}</h3>
             <div className="selection-control">
-                {selections.map((selection, index) => (
+                {selectionsData.map((selection, index) => (
                     <div
                         key={index}
                         className={`selected-item ${selectedIndex === index ? 'selected' : ''}`}
@@ -28,7 +28,8 @@ const SelectionControl = ({ selections }) => {
 };
 
 SelectionControl.propTypes = {
-    selections: PropTypes.arrayOf(PropTypes.node).isRequired,
+    selectionName: PropTypes.string.isRequired,
+    selectionsData: PropTypes.arrayOf(PropTypes.node).isRequired,
 };
 
 export default SelectionControl;

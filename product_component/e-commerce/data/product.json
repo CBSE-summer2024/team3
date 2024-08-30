@@ -4,7 +4,8 @@
         "price": "50₪",
         "rating": 4.6,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "selections": [
+        "selectionName": "No.",
+        "selectionsData": [
             "01",
             "02",
             "03",

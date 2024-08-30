@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div>
-        <ProductInfo></ProductInfo>
+        <ProductInfo dataSource = {"../data/product.json"} />
       </div>
     </>
   )
