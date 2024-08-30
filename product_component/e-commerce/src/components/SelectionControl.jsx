@@ -11,14 +11,14 @@ const SelectionControl = ({ selections }) => {
     return (
         <div>
             <h3>Size</h3>
-            <div className="thumbnail-selector">
-                {selections.map((thumb, index) => (
+            <div className="selection-control">
+                {selections.map((selection, index) => (
                     <div
                         key={index}
-                        className={`thumbnail-item ${selectedIndex === index ? 'selected' : ''}`}
+                        className={`selected-item ${selectedIndex === index ? 'selected' : ''}`}
                         onClick={() => handleSelectionClick(index)}
                     >
-                        {thumb}
+                        {selection}
                     </div>
                 ))}
             </div>
