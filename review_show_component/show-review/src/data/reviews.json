@@ -1,0 +1,33 @@
+[
+    {
+      "name": "tala barham",
+      "comment": "Great product",
+      "rating": 5
+    },
+    {
+      "name": "noor al deen",
+      "comment": "Decent quality",
+      "rating": 4
+    },
+    {
+      "name": "rajab masri",
+      "comment": "bad",
+      "rating": 1
+    },
+    {
+      "name": "mohammad shawahni",
+      "comment": "badddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "rating": 0
+    },
+    {
+      "name": "samer",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+      "rating": 3
+    },
+    {
+      "name": "muna",
+      "comment": "not bad ",
+      "rating": 2
+    }
+  ]
+  

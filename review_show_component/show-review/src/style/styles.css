@@ -1,0 +1,116 @@
+
+.review {
+  flex: 0 0 auto;
+  width: 200px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  text-align: left;
+  transition: transform 0.2s ease, max-height 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 1500px;
+  position: relative;
+}
+
+.review-content {
+  overflow-y: auto;
+  height: 80px;
+}
+
+.scrollable {
+  padding-right: 5px;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+}
+
+.review h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.review .stars {
+  color: #FFD700;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.review p {
+  font-size: 16px;
+  word-wrap: break-word;
+  margin: 5;
+  font-family: Arial, sans-serif;
+
+}
+.reviews-heading {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-family: Arial, sans-serif;
+
+}
+
+.slider-container {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 40px; 
+  box-sizing: content-box; 
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.reviews-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 18px;
+  scrollbar-width: none;
+  padding: 0 10px;
+}
+
+.reviews-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-btn {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 6;
+}
+
+.left-btn {
+  left: -30px; 
+  margin-left: -40px; 
+}
+
+.right-btn {
+  right: -30px; 
+  margin-right: -40px; 
+}
+
+.main-container {
+  padding: 16px;
+  background-color: #f9f9f9;
+}
