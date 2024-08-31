@@ -1,7 +1,7 @@
 import { LitElement, html } from "lit";
-import { fetchData } from "./utils/data-fetcher";
-import { renderProductList } from "./components/product-list";
-import { relatedItemsStyles } from "./styles/related_items_style.css";
+import { fetchData } from "./utils/data-fetcher.js";
+import { renderProductList } from "./components/product-list.js";
+import { relatedItemsStyles } from "./styles/related_items_style.css.js";
 
 export class RelatedItems extends LitElement {
   static properties = {
