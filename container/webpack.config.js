@@ -15,24 +15,24 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/, // For React JSX
+                test: /\.jsx?$/, 
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
                     options: {
                         presets: [
                             ['@babel/preset-env', { targets: "defaults" }],
-                            ['@babel/preset-react', { runtime: 'automatic' }], // Enable new JSX transform
+                            ['@babel/preset-react', { runtime: 'automatic' }], 
                         ],
                     },
                 },
             },
             {
-                test: /\.vue$/, // For Vue single-file components
+                test: /\.vue$/, 
                 loader: 'vue-loader',
             },
             {
-                test: /\.css$/, // For CSS
+                test: /\.css$/, 
                 use: ['style-loader', 'css-loader'],
             },
         ],
@@ -42,15 +42,15 @@ module.exports = {
             react: path.resolve('./node_modules/react'),
             vue$: path.resolve('./node_modules/vue'),
         },
-        extensions: ['.js', '.jsx', '.vue', '.css'], // Extensions to resolve
+        extensions: ['.js', '.jsx', '.vue', '.css'], 
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html', // Path to your HTML template
+            template: './src/index.html', 
         }),
-        new VueLoaderPlugin(), // Vue loader plugin
+        new VueLoaderPlugin(), 
 
-        new webpack.HotModuleReplacementPlugin(), // Explicitly add HMR support
+        new webpack.HotModuleReplacementPlugin(), 
         new CopyWebpackPlugin({
             patterns: [
                 {
